@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <h1>Welcome to Destructor Cocktails</h1>
+
+  <h2>Cocktail list</h2>
+  <% @cocktails.each do |cocktail| %>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail) %> <br></li>
+  <% end %>
+
+  <%= link_to 'Add a cocktail', new_cocktail_path %>
+</div>
